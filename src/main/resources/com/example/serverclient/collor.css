@@ -1,0 +1,136 @@
+.linear-grad2{
+   -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #d5d2d5, #f3c382);
+-fx-border-color: black;
+-fx-text-fill:black;
+-fx-border-radius:20;
+-fx-background-radius:20;
+}
+.tableW{
+-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #d5d2d5, #f3c382);
+-fx-border-color: black;
+}
+
+  .table-view
+{
+
+      -fx-background-radius:20;
+
+   }
+
+.co1{
+    -fx-background-color: box-;
+
+
+    -fx-border-color:black;
+
+
+
+
+}
+
+  .Hbox
+{    
+       -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #f3c382, #d5d2d5);
+-fx-border-color: black;
+-fx-border-radius:20;
+-fx-background-radius:20;
+   }
+
+.buttons{
+-fx-background-color: #d5d2d5;
+-fx-border-color:black;
+-fx-border-radius:20;
+-fx-background-radius:20;
+}
+
+.borderPan {
+
+
+
+}
+
+
+
+    .anchorPa{
+
+
+    }
+
+
+
+.TextFil{
+
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #ffe5a4);
+}
+
+.ListW{
+
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #f3c382);
+    -fx-border-radius:20;
+    -fx-background-radius:20;
+}
+
+.text-field{
+    -fx-font-family: "Comic Sans MS";
+
+}
+.butttt{
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #f3c382);
+    -fx-border-radius:20;
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, #f3c382,#ffffff);
+
+    -fx-background-radius:20;
+}
+
+.anchorPaCity{
+    -fx-font-family: "Comic Sans MS";
+
+
+}
+
+.buttonCity{
+    -fx-font-family: "Comic Sans MS";
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #f3c382);
+    -fx-border-radius:20;
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, #f3c382,#ffffff);
+
+    -fx-background-radius:20;
+}
+
+.TextFilCity{
+
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #f3c382);
+}
+
+.ListWCity{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #ffffff, #f3c382);
+    -fx-border-radius:20;
+    -fx-background-radius:20;
+}
+.jfx-text-field,
+.jfx-combo-box {
+    -fx-border-radius: 20px;
+    -fx-border-color: #CCCCCC;
+}
+
+.jfx-text-field {
+    -fx-padding: 0.333333em 1em 0.333333em 1em;
+}
+
+.jfx-combo-box {
+    -fx-padding: 0em 1em 0em 1em;
+}
+
+.jfx-text-field > .input-line,
+.jfx-combo-box > .input-line {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0px;
+    -fx-translate-y: 0px;
+}
+
+.jfx-text-field > .input-focused-line,
+.jfx-combo-box > .input-focused-line {
+    -fx-background-color: transparent;
+    -fx-pref-height: 0px;
+}

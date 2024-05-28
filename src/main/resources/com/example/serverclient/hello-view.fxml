@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="600.0" styleClass="borderPan" stylesheets="@collor.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.serverclient.controller.MainController">
+    <top>
+        <MenuBar styleClass="linear-grad2" stylesheets="@collor.css" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Файл">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#closeAction" text="Выход" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Клиенты">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addOrChangeClientAction" text="Добавить/изменить" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Стоимость">
+                    <items>
+                        <MenuItem fx:id="addPublisher" mnemonicParsing="false" onAction="#addOrChangeServiceCostAction" text="Добавить/измена" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Услуги">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addOrChangeServiceAction" text="Добавить/изменить" />
+                    </items>
+                </Menu>
+            </menus>
+            <BorderPane.margin>
+                <Insets top="2.5" />
+            </BorderPane.margin>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="receiptTable" prefHeight="326.0" prefWidth="598.0" stylesheets="@collor.css" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="columnNumber" prefWidth="54.0" styleClass="co1" text="Номер" />
+                <TableColumn fx:id="columnReceiptTitle" prefWidth="199.0" styleClass="co1" text="Квитанция" />
+                <TableColumn fx:id="columnClient" minWidth="4.0" prefWidth="121.0" styleClass="co1" text="Клиент" />
+                <TableColumn fx:id="columnServiceCost" prefWidth="225.0" styleClass="co1" text="Стоимость" />
+            </columns>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox prefHeight="47.0" prefWidth="600.0" styleClass="Hbox" stylesheets="@collor.css" BorderPane.alignment="CENTER">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addReceiptAction" styleClass="buttons" stylesheets="@collor.css" text="Добавить">
+                    <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#changeBookAction" styleClass="buttons" stylesheets="@collor.css" text="Изменить">
+                    <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </HBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#deleteReceiptAction" prefHeight="12.0" prefWidth="71.0" styleClass="buttons" stylesheets="@collor.css" text="Удалить" textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                    </HBox.margin>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="2.5" />
+            </BorderPane.margin>
+        </HBox>
+    </bottom>
+</BorderPane>

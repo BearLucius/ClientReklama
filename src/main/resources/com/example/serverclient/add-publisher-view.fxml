@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="242.0" prefWidth="506.0" styleClass="anchorPaCity" stylesheets="@collor.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.serverclient.controller.ServiceCostController">
+    <children>
+        <TextField fx:id="textTitle" layoutX="92.0" layoutY="23.0" styleClass="TextFil" stylesheets="@collor.css" />
+        <ComboBox fx:id="comboBoxServiceCost" layoutX="92.0" layoutY="73.0" prefHeight="25.0" prefWidth="164.0" styleClass="TextFil" stylesheets="@collor.css" />
+        <ListView fx:id="dataList" layoutX="296.0" layoutY="23.0" onMouseClicked="#ClicktoList" prefHeight="200.0" prefWidth="200.0" styleClass="ListWCity" stylesheets="@collor.css" />
+        <Button fx:id="addServCost" layoutX="25.0" layoutY="138.0" mnemonicParsing="false" onAction="#addAction" styleClass="buttonCity" stylesheets="@collor.css" text="Добавить" />
+        <Button fx:id="cancelPublisher" layoutX="119.0" layoutY="138.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="28.0" prefWidth="73.0" styleClass="buttonCity" stylesheets="@collor.css" text="Откат" />
+        <Button fx:id="deletePublisher" layoutX="205.0" layoutY="138.0" mnemonicParsing="false" onAction="#deleteAction" styleClass="buttonCity" stylesheets="@collor.css" text="Удалить" />
+        <Label layoutX="16.0" layoutY="27.0" text="Название" />
+        <Label layoutX="26.0" layoutY="77.0" text="Город" />
+    </children>
+</AnchorPane>
